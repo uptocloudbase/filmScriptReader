@@ -18,11 +18,17 @@ public class GetLinesTest {
         GetLines target = new GetLines();
         GetLinesRequest glRq = new GetLinesRequest();
         glRq.setMovieId("e017d89b-3c08-4472-9336-d90d5059033d");
-        glRq.setStartLine(10);
-        glRq.setNumLInes(10);
+        glRq.setStartLine(50);
+        glRq.setNumLines(10);
         Context context = Mockito.mock(Context.class);
         List<FilmLine> result = target.handleRequest(glRq, context);
 
         assertEquals(11, result.size());
+
+        for (FilmLine filmLine : result) {
+
+            System.out.format("%n: %s %s", filmLine.getLineNumber(), filmLine.getCharacter(), filmLine.getDialogue());
+
+        }
     }
 }

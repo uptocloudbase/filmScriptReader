@@ -19,7 +19,7 @@ public class GetLines implements RequestHandler<GetLinesRequest, List<FilmLine>>
 
         try {
 
-            result = dbService.getLinesFromMovie(getLinesRequest.getMovieId(), getLinesRequest.getStartLine(), getLinesRequest.getNumLInes());
+            result = dbService.getLinesFromMovie(getLinesRequest.getMovieId(), getLinesRequest.getStartLine(), getLinesRequest.getNumLines());
 
 
         } finally {

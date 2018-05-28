@@ -4,7 +4,7 @@ public class GetLinesRequest {
 
     private String movieId;
     private int startLine;
-    private int numLInes;
+    private int numLines;
 
     public String getMovieId() {
         return movieId;
@@ -22,11 +22,11 @@ public class GetLinesRequest {
         this.startLine = startLine;
     }
 
-    public int getNumLInes() {
-        return numLInes;
+    public int getNumLines() {
+        return numLines;
     }
 
-    public void setNumLInes(int numLInes) {
-        this.numLInes = numLInes;
+    public void setNumLines(int numLines) {
+        this.numLines = numLines;
     }
 }
